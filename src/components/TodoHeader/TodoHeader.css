@@ -1,0 +1,8 @@
+.TodoHeader-wrapper input {
+  padding: 5px 12px;
+  outline: none;
+}
+
+.TodoHeader-wrapper button {
+  padding: 5px 12px;
+}

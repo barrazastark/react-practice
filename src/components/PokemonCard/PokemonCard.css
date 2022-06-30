@@ -1,0 +1,41 @@
+.pokemon-card {
+  border: solid 5px #bee9e3;
+  width: 150px;
+  height: 150px;
+  box-sizing: border-box;
+  background-color: white;
+  padding: 10px;
+  margin: 0 30px 30px 30px;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  transition: all .2s;
+  position: relative;
+  cursor: pointer;
+}
+
+.pokemon-card p {
+  margin: 0;
+}
+
+.pokemon-card::after {
+  content: '';
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  border-radius: 100%;
+  top: -8px;
+  right: -8px;
+}
+
+.pokemon-card.fire::after {
+  background-color: red;
+}
+
+.pokemon-card.grass::after {
+  background-color: green;
+}
+
+.pokemon-card.water::after {
+  background-color: blue;
+}
