@@ -4,7 +4,6 @@
 // Quiz
 
 import { useState } from "react";
-import Question from "./components"
 
 // 1 
 // |  hoy es jueves ?,  [True] [False] |
@@ -41,15 +40,13 @@ const AppV4 = () => {
     }
 
     setTurno(turno + 1);
-    // un cambio de estado lanza un nuevo render
-
-    // ejecutar 2 dispatcher no ejecuta 2 render ,
-    // gracias al batching update apartir de la v18 de react
+    // un cambio de estado lanza un nuevo render, pero
+    // ejecutar 2 dispatchers no ejecuta 2 renders
+    // gracias al batching update de react v18
   }
 
   const handleCheckDetails = (book) => {
     console.log(`Detalles de la pregunta fue sacada del book: ${book}`)
-
   }
 
   if(turno === QuestionsDB.length) {
