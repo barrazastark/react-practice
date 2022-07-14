@@ -1,5 +1,5 @@
 
-import "./PokemonCard.css";
+import styles from "./PokemonCard.css";
 
 const PokemonCard = (props) => {
   
@@ -13,6 +13,7 @@ const PokemonCard = (props) => {
   return (
     <div 
       className={`pokemon-card ${type}`} 
+      
       onClick={handleClick}
       role="button"
     >
